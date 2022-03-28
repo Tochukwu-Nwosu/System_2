@@ -3,9 +3,7 @@ import json
 with open("exercise.json") as reader:              # Opens the exercise.json file as reader
     details = json.load(reader)                    # Stores the data in the json file to the variable 'details'
 
-class system:
-    def __init__(self):
-        pass
+class System:
     def registration (self):
         print("\nREGISTRATION\n")
         self.username = input("Enter username: ")
@@ -30,14 +28,12 @@ class system:
 
 
 
-obj = system()
-obj1 = system()
+obj = System()
 obj.registration()
-obj1.registration()
 obj.login()
 obj.login()
 obj.login()
-# obj2 = system()
-# obj3 = system()
-# obj4 = system()
+# obj2 = System()
+# obj3 = System()
+# obj4 = System()
 print(details)
